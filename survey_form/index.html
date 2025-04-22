@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p class="description" id="description">Fill this rn or i kiss you</p>
+        
+        <form id="survey-form">
+            <div class="section">
+                <label id="name-label" for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Type your name here" required>
+            </div>
+            
+            <div class="section">
+                <label id="email-label" for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="section">
+                <label id="number-label" for="number">Your Age:</p>
+                <input type="number" id="number" min="12" max="65" placeholder="Age" required>
+            </div>
+            
+            <div class="section">
+                <label>What is your job?</label>
+                <select id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="student">Student</option>
+                    <option value="worker">Student</option>
+                    <option value="unemployed">Student</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="section">
+                <label>How do you rate our service?</label>
+                <div>
+                    <input type="radio" name="rating" value="excellent"> Excellent<br>
+                    <input type="radio" name="rating" value="good"> Good<br>
+                    <input type="radio" name="rating" value="average"> Average<br>
+                    <input type="radio" name="rating" value="poor"> Poor
+                </div>
+            </div>
+            
+            <div class="section">
+                <label>What should we improve? (Check all that apply)</label>
+                <div>
+                    <input type="checkbox" value="quality"> Product quality<br>
+                    <input type="checkbox" value="price"> Prices<br>
+                    <input type="checkbox" value="service"> Customer service<br>
+                    <input type="checkbox" value="delivery"> Delivery speed
+                </div>
+            </div>
+            
+            <div class="section">
+                <label>Any other comments?</label>
+                <textarea rows="4" placeholder="Write your comments here..."></textarea>
+            </div>
+            
+            <button id="submit" type="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
